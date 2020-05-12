@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js example</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="sketch.js"></script>
+  <script src="cell.js"></script>
+  <script src="helperFunctions.js"></script>
+  <script src="./p5.js"></script>
+</head>
+
+
+<body class="container">
+
+  <h1 class="row display-3"> A* Algorithm Visualization </h1>
+
+  <form class="end-coordinates">
+    <div class= "row">
+      <div class="col-3">
+        <label for="end-x"> End X: </label>
+        <input id="end-x" name="end-x" type="number" class="form-control" maxlength="2">
+      </div>
+      <div class="col-3">
+        <label for="end-y"> End Y: </label>
+        <input id="end-y" name="end-y" type="number" class="form-control" maxlength="2">
+      </div>
+    </div>
+    <div class="row instructions">
+      <p>
+        Click anywhere to add more obstacles.
+        <br>
+        Refresh page to get different random layout.
+      </p>
+    </div>
+
+    <div class="row start-animation">
+      <button class="btn-dark" type="button" onclick="startAnimation()">Start Animation</button>
+    </div>
+  </form>
+
+  <div class = "row">
+    <div id="sketch-holder">
+    </div>
+  </div>
+
+  <div class="footer">
+      <hr>
+      <div class="row">
+          <div class="col-6">
+            <p>
+              By Casey Hirth
+            </p>
+          </div>
+          <div class="col-6">
+            Contact: kch5153@gmail.com
+          </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
