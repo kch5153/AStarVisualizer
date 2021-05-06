@@ -1,2 +1,3 @@
 # AStarVisualizer
-A* search algorithm visualization
+
+Browser based visualization for A* search algorith using the p5.js javascript library
